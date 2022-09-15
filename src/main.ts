@@ -12,3 +12,8 @@ for (const item of Array.from(collapsibles)) {
     this.classList.toggle('collapsible--expanded');
   });
 }
+
+const footerParagraph =
+  document.querySelector<HTMLParagraphElement>('.footer__copyright')!;
+
+footerParagraph.innerText = `© ${new Date().getFullYear()} Dr. Sabry`;
